@@ -5,8 +5,8 @@
 
 :root {
     --primary-color:#E9EAEC;
-    --box-primary-color: #FAD02C;
-    --box-secondary-color: #90ADC6;
+    --box-primary-color: #90ADC6;
+    --box-secondary-color:  #FAD02C;
     --color-primary-color:#333652;
     --color-secondary-color: white;
     --box-shade-primary-color: #4b7183;
@@ -21,10 +21,10 @@ body {
 .dark-theme{
     --background-image: linear-gradient(to right, #0D3530 , #216260);
     --primary-color: #19171d;
-    --box-primary-color: #2c649e;
-    --box-secondary-color: #bd3755;
+    --box-primary-color: #bd3755;
+    --box-secondary-color: #2c649e;
     --color-primary-color:#e7e7e7;
-    --box-shade-primary-color: #59606a;
+    --box-shade-primary-color: #544f50;
     
 }
 
@@ -89,16 +89,17 @@ a > img:hover {
 .skill-icons {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    padding-left: 5%;
+    padding-left: 7%;
 }
 .skill-icons > img {
     margin: 10px 30px;
     max-width: 100px;
     border: solid var(--box-primary-color) 2px;
     border-radius: 10px;
-    margin: 50px 0 50px 50px;
+    margin: 25px 0 25px 25px;
     background-color: var(--box-primary-color);
     justify-content: space-around;
+    box-shadow: 0 10px 2px rgba(0,0,0,0.3), inset 0 -50px 30px rgba(0,0,0,0.1);
    
 }
 .contact {
