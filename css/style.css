@@ -9,6 +9,7 @@
     --box-secondary-color: #90ADC6;
     --color-primary-color:#333652;
     --color-secondary-color: white;
+    --box-shade-primary-color: #4b7183;
 }
 
 body {
@@ -17,11 +18,11 @@ body {
 }
 
 .dark-theme{
-    --primary-color: #1a202c;
-    --box-primary-color: #2d3848;
-    --box-secondary-color: #3a4556;
-    --color-primary-color:#ffffff;
-   
+    --primary-color: #19171d;
+    --box-primary-color: #2c649e;
+    --box-secondary-color: #bd3755;
+    --color-primary-color:#e7e7e7;
+    --box-shade-primary-color: #59606a;
     
 }
 
@@ -78,7 +79,7 @@ h4 {
 }
 a > img {
     border-radius: 10px;
-    box-shadow: 10px 10px 5px #4b7183;
+    box-shadow: 10px 10px 5px var(--box-shade-primary-color);
 }
 a > img:hover {
     cursor: pointer;
