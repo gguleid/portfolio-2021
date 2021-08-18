@@ -89,17 +89,18 @@ a > img:hover {
 .skill-icons {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    padding-left: 7%;
+    padding-left: 9%;
 }
 .skill-icons > img {
-    margin: 10px 30px;
-    max-width: 100px;
-    border: solid var(--box-primary-color) 2px;
-    border-radius: 10px;
-    margin: 25px 0 25px 25px;
-    background-color: var(--box-primary-color);
+    /* margin: 150px 30px; */
+    /* max-width: 100px; */
+    border: solid #E9EAEC 2px;
+    border-radius: 45px;
+    margin: 2px  20px 25px;
+    background-color: #E9EAEC;
     justify-content: space-around;
     box-shadow: 0 10px 2px rgba(0,0,0,0.3), inset 0 -50px 30px rgba(0,0,0,0.1);
+    
    
 }
 .contact {
@@ -116,4 +117,12 @@ a > img:hover {
 .contact-icons{
     max-width: 40px;
     margin: 0 20px;
+}
+
+#face {
+    border: solid var(--box-primary-color);
+    border-radius: 175px;
+    padding: 2%;
+    margin: 2px 0 5px;
+    background-color: var(--box-secondary-color);
 }

@@ -48,7 +48,7 @@
                 <div class="container">
                     <div class="top">
                         <h1 class="display-8">Hello! My name is Guled Ahmed  </h1>
-                        <img src="./css/img/Guled2.png" alt="IssaMeGuled" id="face" style="width:250px;max-width:300px" >
+                        <img src="./css/img/Guled_lightmode.PNG" alt="IssaMeGuled" id="face" style="width:250px;max-width:300px" >
                         <h1> I am a Full Stack Developer </h1>
                         <hr class="my-8">
                         <p>with a background in entrepreneurship. I have a passion for using technology to help various enterprises increase their revenue and profitability. I bring my solution-oriented approach into each project, and I approach tasks with optimism, open-mindedness and a design-centered perspective. 
@@ -223,7 +223,7 @@
         <section id="skills">
             <h2>Skills</h2>
             <div class="skill-icons">
-                <img src="./css/img/javascript.svg" alt="JavaScript" style="width:85px; height: 85px;">
+                <img src="./css/img/javascript.svg" alt="JavaScript" style="width:85px; height: 85px;"> 
                 <img src="./css/img/html5.svg" alt="HTML5" style="width:85px; height: 85px;">
                 <img src="./css/img/css3.svg" alt="CSS3" style="width:85px; height: 85px;">
                 <img src="./css/img/react.svg" alt="ReactJS" style="width:85px; height: 85px;">
@@ -248,6 +248,7 @@
 </html>
 <script>
     var icon = document.getElementById("icon");
+    var face = document.getElementById("face");
 
     if(localStorage.getItem("theme") == "null") {
     localStorage.setItem("theme", "light");
@@ -257,9 +258,11 @@
 
     if (localData == "light"){
         icon.src="./css/img/moon.png";
+        face.src="./css/img/Guled_darkmode.PNG";
         document.body.classList.remove("dark-theme");
     } else if (localData == "dark"){
         icon.src="./css/img/sun.png";
+        face.src="./css/img/Guled_lightmode.PNG";
         document.body.classList.add("dark-theme");
     }
 
@@ -267,9 +270,11 @@
         document.body.classList.toggle("dark-theme");
         if(document.body.classList.contains("dark-theme")){
             icon.src= "./css/img/sun.png";
+            face.src="./css/img/Guled_lightmode.PNG"
             localStorage.setItem("theme", "dark"); 
         } else {
             icon.src="./css/img/moon.png";
+            face.src="./css/img/Guled_darkmode.PNG";
             localStorage.setItem("theme", "light");
         }
     }
