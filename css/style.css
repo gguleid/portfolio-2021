@@ -126,3 +126,18 @@ a > img:hover {
     margin: 2px 0 5px;
     background-color: var(--box-secondary-color);
 }
+
+@media (max-width: 780px)  {
+    body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+    }
+
+    .skill-icons {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding-left: 15%;
+    }
+}
